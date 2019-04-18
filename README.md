@@ -24,6 +24,7 @@ Install [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome-Shell 
 FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
 
 ```
+git clone https://github.com/inzar98/optimus-switch-argos-manjaro.git
 ! [ -d "~/.local/share/gnome-shell/extensions" ] && mkdir --parents ~/.local/share/gnome-shell/extensions || trueg
 cd optimus-switch-argos-manjaro
 cp argos@pew.worldwidemann.com -r ~/.local/share/gnome-shell/extensions
@@ -38,9 +39,6 @@ Create directory `~/.local/share/icons` if it does not exist:
 
 Then:
 ```
-git clone https://github.com/inzar98/optimus-switch-argos-manjaro.git
-cd optimus-switch-argos-manjaro
-
     # copy icons (not necessary)
     cp -v icons/* ~/.local/share/icons/
 
