@@ -1,27 +1,35 @@
 
-                        # ARGOS DEVELOPMENT IS STOPPED. FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
-                        # I can fork it too if anyone want...
+         # ARGOS DEVELOPMENT IS STOPPED. FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
+         # I can fork it too if anyone want...
+         # You can fallow instalition section for Argos 3.32
+         # THIS FORK STILL WIP
 
 
-# Argos Script For Optimus-Manager
-Gnome Shell Indicator for Optimus-Manager, using Argos API
-
-Special Thanks to Cyberalex4 and Askannz <3!
+# Argos Script For Optimus-Switch
+Gnome Shell Indicator for Optimus-Switch, using Argos API
 
 Screenshot was first release. Added icon switch for after gpu switching.
 
 ![NVidia Prime Argos Indicator](https://github.com/inzar98/optimus-manager-argos/blob/master/screenshots/optimus-manager-1.png)                                       
 
 #### Requirements
-- [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome Shell extension.
-- [Optimus-Manager](https://github.com/Askannz/optimus-manager) Awesome Optimus Switch script!
+- [Argos] Gnome Shell extension. Look for Installition section
+- [Optimus-Switch](https://forum.manjaro.org/t/call-for-testing-optimus-switch/) Awesome Optimus Switch script!
 - Zenity for dialog window By @ArionWT
-- Any Arch based distro.
+- Gksu
 
 
 #### Installation
 Install [Argos](https://extensions.gnome.org/extension/1176/argos/) Gnome-Shell extension.
 FOR GNOME 3.32 USE THİS FORK https://github.com/p-e-w/argos/pull/76
+
+```
+! [ -d "~/.local/share/gnome-shell/extensions" ] && mkdir --parents ~/.local/share/gnome-shell/extensions || trueg
+cd optimus-switch-argos-manjaro
+cp argos@pew.worldwidemann.com -r ~/.local/share/gnome-shell/extensions
+```
+*** Restart Gnome-Shell and activate the extension ***
+
 
 Create directory `~/.local/share/icons` if it does not exist:
 ```
@@ -30,14 +38,14 @@ Create directory `~/.local/share/icons` if it does not exist:
 
 Then:
 ```
-git clone https://github.com/inzar98/optimus-manager-argos.git
-cd optimus-manager-argos
+git clone https://github.com/inzar98/optimus-switch-argos-manjaro.git
+cd optimus-switch-argos-manjaro
 
     # copy icons (not necessary)
     cp -v icons/* ~/.local/share/icons/
 
-# copy 'optimus-manager-ar.sh' to 'argos' folder
-cp -v optimus-manager-ar.sh ~/.config/argos/
+# copy 'Optimus-Switch' to 'argos' folder
+cp -v Optimus-Switch ~/.config/argos/
 
 # Thats All !
 ```
@@ -48,7 +56,7 @@ rm ~/.local/share/icons-to-delete/{nvidia-active-symbolic.svg,nvidia-inactive-sy
 
 
 # remove argos extension script
-rm ~/.config/argos/optimus-manager-ar.sh
+rm ~/.config/argos/Optimus-Switch
 
 
 
